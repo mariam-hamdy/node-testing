@@ -1,1 +1,5 @@
 hello from the first text
+double linked list:
+previous pointer => 
+data
+next pointer
