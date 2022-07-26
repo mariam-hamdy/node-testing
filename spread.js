@@ -37,5 +37,5 @@ console.log(copied)
 console.log(copied === obj1? 'true': 'false')
 copied.foo= 'mariam'
 console.log(obj1)
-console.log(copied)s
+console.log(copied)
 */

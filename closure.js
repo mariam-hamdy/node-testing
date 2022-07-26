@@ -24,14 +24,24 @@ function closureFunction(n) {
         return y+ 11+ x;
     }
 }
+//the importance of closure is I can use private variable from outside by using functions
+function randomEx() {
+    let obj = {name: "mariam", age: 25}
+    return function() {
+        return obj.name;
+    }
+}
+let copiedEx = randomEx();
+let innerVar = copiedEx();
+console.log(innerVar)
 
-let baz = closureFunction(7);
+/*let baz = closureFunction(7);
 let total =baz();
 console.log(baz);
 console.log(typeof baz)
 console.log(total)
 
-/*let addingResult = adding(50);
+let addingResult = adding(50);
 console.log(addingResult)
 let result = addingResult(50);
 console.log(result);*/
